@@ -1,6 +1,6 @@
 {
   "name": "spurdo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "English to Spurdo translation library :DDD",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,6 +21,10 @@
     "meme",
     "generator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/szTheory/spurdo.git"
+  },
   "author": "szTheory",
   "license": "MIT",
   "devDependencies": {
