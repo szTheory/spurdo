@@ -4,6 +4,8 @@ const REPLACEMENTS = [
   [",", " XDD"],
   ["''", ""],
 
+  ["epic", "ebin"],
+
   ["wh", "w"],
   ["th", "d"],
 
@@ -30,7 +32,6 @@ const REPLACEMENTS = [
   ["kn", "gn"],
   ["lt", "ld"],
   ["mm", "m"],
-  ["nt", "dn"],
   ["pr", "br"],
   ["ts", "dz"],
   ["tr", "dr"],
@@ -38,7 +39,6 @@ const REPLACEMENTS = [
   ["as", "az"],
   ["bs", "bz"],
   ["ds", "dz"],
-  ["es", "es"],
   ["fs", "fz"],
   ["gs", "gz"],
   ["is", "iz"],
@@ -47,7 +47,6 @@ const REPLACEMENTS = [
   ["ns", "nz"],
   ["rs", "rz"],
   ["ss", "sz"],
-  ["ts", "tz"],
   ["us", "uz"],
   ["ws", "wz"],
   ["ys", "yz"],
@@ -57,9 +56,6 @@ const REPLACEMENTS = [
 
   ["ic", "ig"],
   ["ng", "nk"],
-
-  ["kek", "geg"],
-  ["epic", "ebin"],
 ]
 
 const SPURDO_SMILE_PATTERN = ":D"

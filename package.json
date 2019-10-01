@@ -2,11 +2,18 @@
   "name": "spurdo",
   "version": "1.0.0",
   "description": "English to Spurdo translation library :DDD",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "postversion": "git push && git push --tags"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "spurdo",
     "english",
@@ -15,6 +22,9 @@
   "author": "szTheory",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   }
 }
