@@ -9,6 +9,6 @@ NPM module for English to Spurdo speak :DDD
 
 ```javascript
 import toSpurdo from "spurdo"
-toSpurdo("We the People of the United States")
+toSpurdo("We the People of the United States.")
 // "We de beoble of de Unided States XDD"
 ```
