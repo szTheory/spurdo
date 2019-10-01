@@ -1,7 +1,11 @@
 import toSpurdo from '../src/index'
 
-test('epic -> ebin', () => {
-  expect(toSpurdo('epic :D')).toBe('ebin :D')
+test('changes periods to :DD smiles', () => {
+  expect(toSpurdo('Hi. How are you?')).toBe('Hi :DD How are you?')
+})
+
+test('changes commas in the middle of a sentence to XD smiles', () => {
+  expect(toSpurdo('One, two, three')).toBe('One XDD two XDD dree :DD')
 })
 
 test('no change in "hello"', () => {
@@ -14,6 +18,10 @@ test('adds a smile if none', () => {
 
 test('keeps the smile if already has one', () => {
   expect(toSpurdo('dang :D')).toBe('dank :D')
+})
+
+test('epic -> ebin', () => {
+  expect(toSpurdo('epic :D')).toBe('ebin :D')
 })
 
 test('wh -> w', () => {

@@ -2,7 +2,6 @@
 const REPLACEMENTS = [
   ["[.]", " :DD"],
   [",", " XDD"],
-  ["''", ""],
 
   ["epic", "ebin"],
 
