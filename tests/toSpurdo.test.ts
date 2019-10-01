@@ -2,7 +2,8 @@ import toSpurdo from '../src/index'
 
 test('recites the preamble to the US Constitution', () => {
   const preamble = "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
-  expect(toSpurdo(preamble)).toBe("herro")
+  const expectedText = "We de beoble of de Unided States XDD in Order to form a more berfect Union XDD establizh Juztige XDD inzure domestig dranquilidy XDD brovide for de gomon defence XDD bromode de general Welfare XDD and secure de Bleszignz of Liberty to ourzelves and our bosteridy XDD do ordain and establizh diz gonztidution for de Unided States of Ameriga :DD"
+  expect(toSpurdo(preamble)).toBe(expectedText)
 })
 
 test('changes periods to :DD smiles', () => {
